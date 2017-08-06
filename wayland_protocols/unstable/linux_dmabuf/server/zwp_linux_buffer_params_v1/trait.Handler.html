@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Handler` trait in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Handler">
+
+    <title>wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::Handler - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc trait">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Trait Handler</p><div class="block items"><ul><li><a href="#provided-methods">Provided Methods</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../index.html'>unstable</a>::<wbr><a href='../../index.html'>linux_dmabuf</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_linux_buffer_params_v1</a></p><script>window.sidebarCurrent = {name: 'Handler', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../index.html'>unstable</a>::<wbr><a href='../../index.html'>linux_dmabuf</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_linux_buffer_params_v1</a>::<wbr><a class="trait" href=''>Handler</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-076ad18560c85d0c/out/linux-dmabuf_server_api.rs.html#399-552' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait Handler {
+    fn <a href='#method.destroy' class='fnname'>destroy</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a><br>&nbsp;&nbsp;&nbsp;&nbsp;) { ... }
+    fn <a href='#method.add' class='fnname'>add</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fd: <a class="type" href="https://doc.rust-lang.org/nightly/std/sys/imp/ext/io/type.RawFd.html" title="type std::sys::imp::ext::io::RawFd">RawFd</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plane_idx: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stride: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier_hi: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier_lo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>&nbsp;&nbsp;&nbsp;&nbsp;) { ... }
+    fn <a href='#method.create' class='fnname'>create</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flags: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>&nbsp;&nbsp;&nbsp;&nbsp;) { ... }
+    fn <a href='#method.create_immed' class='fnname'>create_immed</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buffer_id: WlBuffer, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flags: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>&nbsp;&nbsp;&nbsp;&nbsp;) { ... }
+}</pre>
+            <h2 id='provided-methods'>Provided Methods</h2>
+            <div class='methods'>
+        <h3 id='method.destroy' class='method'><span id='destroy.v' class='invisible'><code>fn <a href='#method.destroy' class='fnname'>destroy</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a><br>)</code></span></h3><div class='docblock'><p>delete this object, used or not</p>
+
+<p>Cleans up the temporary data sent to the server for dmabuf-based
+wl_buffer creation.</p>
+
+<p>This is a destructor, you cannot send events to this object once this method is called.</p>
+</div><h3 id='method.add' class='method'><span id='add.v' class='invisible'><code>fn <a href='#method.add' class='fnname'>add</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;fd: <a class="type" href="https://doc.rust-lang.org/nightly/std/sys/imp/ext/io/type.RawFd.html" title="type std::sys::imp::ext::io::RawFd">RawFd</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;plane_idx: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;offset: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;stride: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;modifier_hi: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;modifier_lo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>)</code></span></h3><div class='docblock'><p>add a dmabuf to the temporary set</p>
+
+<p>This request adds one dmabuf to the set in this
+zwp_linux_buffer_params_v1.</p>
+
+<p>The 64-bit unsigned value combined from modifier_hi and modifier_lo
+is the dmabuf layout modifier. DRM AddFB2 ioctl calls this the
+fb modifier, which is defined in drm_mode.h of Linux UAPI.
+This is an opaque token. Drivers use this token to express tiling,
+compression, etc. driver-specific modifications to the base format
+defined by the DRM fourcc code.</p>
+
+<p>This request raises the PLANE_IDX error if plane_idx is too large.
+The error PLANE_SET is raised if attempting to set a plane that
+was already set.</p>
+</div><h3 id='method.create' class='method'><span id='create.v' class='invisible'><code>fn <a href='#method.create' class='fnname'>create</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;height: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;format: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;flags: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>)</code></span></h3><div class='docblock'><p>create a wl_buffer from the given dmabufs</p>
+
+<p>This asks for creation of a wl_buffer from the added dmabuf
+buffers. The wl_buffer is not created immediately but returned via
+the &#39;created&#39; event if the dmabuf sharing succeeds. The sharing
+may fail at runtime for reasons a client cannot predict, in
+which case the &#39;failed&#39; event is triggered.</p>
+
+<p>The &#39;format&#39; argument is a DRM_FORMAT code, as defined by the
+libdrm&#39;s drm_fourcc.h. The Linux kernel&#39;s DRM sub-system is the
+authoritative source on how the format codes should work.</p>
+
+<p>The &#39;flags&#39; is a bitfield of the flags defined in enum &quot;flags&quot;.
+&#39;y_invert&#39; means the that the image needs to be y-flipped.</p>
+
+<p>Flag &#39;interlaced&#39; means that the frame in the buffer is not
+progressive as usual, but interlaced. An interlaced buffer as
+supported here must always contain both top and bottom fields.
+The top field always begins on the first pixel row. The temporal
+ordering between the two fields is top field first, unless
+&#39;bottom_first&#39; is specified. It is undefined whether &#39;bottom_first&#39;
+is ignored if &#39;interlaced&#39; is not set.</p>
+
+<p>This protocol does not convey any information about field rate,
+duration, or timing, other than the relative ordering between the
+two fields in one buffer. A compositor may have to estimate the
+intended field rate from the incoming buffer rate. It is undefined
+whether the time of receiving wl_surface.commit with a new buffer
+attached, applying the wl_surface state, wl_surface.frame callback
+trigger, presentation, or any other point in the compositor cycle
+is used to measure the frame or field times. There is no support
+for detecting missed or late frames/fields/buffers either, and
+there is no support whatsoever for cooperating with interlaced
+compositor output.</p>
+
+<p>The composited image quality resulting from the use of interlaced
+buffers is explicitly undefined. A compositor may use elaborate
+hardware features or software to deinterlace and create progressive
+output frames from a sequence of interlaced input buffers, or it
+may produce substandard image quality. However, compositors that
+cannot guarantee reasonable image quality in all cases are recommended
+to just reject all interlaced buffers.</p>
+
+<p>Any argument errors, including non-positive width or height,
+mismatch between the number of planes and the format, bad
+format, bad offset or stride, may be indicated by fatal protocol
+errors: INCOMPLETE, INVALID_FORMAT, INVALID_DIMENSIONS,
+OUT_OF_BOUNDS.</p>
+
+<p>Dmabuf import errors in the server that are not obvious client
+bugs are returned via the &#39;failed&#39; event as non-fatal. This
+allows attempting dmabuf sharing and falling back in the client
+if it fails.</p>
+
+<p>This request can be sent only once in the object&#39;s lifetime, after
+which the only legal request is destroy. This object should be
+destroyed after issuing a &#39;create&#39; request. Attempting to use this
+object after issuing &#39;create&#39; raises ALREADY_USED protocol error.</p>
+
+<p>It is not mandatory to issue &#39;create&#39;. If a client wants to
+cancel the buffer creation, it can just destroy this object.</p>
+</div><h3 id='method.create_immed' class='method'><span id='create_immed.v' class='invisible'><code>fn <a href='#method.create_immed' class='fnname'>create_immed</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;evqh: &amp;mut <a class="struct" href="../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;resource: &amp;<a class="struct" href="../../../../../wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/struct.ZwpLinuxBufferParamsV1.html" title="struct wayland_protocols::unstable::linux_dmabuf::server::zwp_linux_buffer_params_v1::ZwpLinuxBufferParamsV1">ZwpLinuxBufferParamsV1</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;buffer_id: WlBuffer, <br>&nbsp;&nbsp;&nbsp;&nbsp;width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;height: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;format: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;flags: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>)</code></span></h3><div class='docblock'><p>immediately create a wl_buffer from the given dmabufs</p>
+
+<p>This asks for immediate creation of a wl_buffer by importing the
+added dmabufs.</p>
+
+<p>In case of import success, no event is sent from the server, and the
+wl_buffer is ready to be used by the client.</p>
+
+<p>Upon import failure, either of the following may happen, as seen fit
+by the implementation:
+- the client is terminated with one of the following fatal protocol
+errors:
+- INCOMPLETE, INVALID_FORMAT, INVALID_DIMENSIONS, OUT_OF_BOUNDS,
+in case of argument errors such as mismatch between the number
+of planes and the format, bad format, non-positive width or
+height, or bad offset or stride.
+- INVALID_WL_BUFFER, in case the cause for failure is unknown or
+plaform specific.
+- the server creates an invalid wl_buffer, marks it as failed and
+sends a &#39;failed&#39; event to the client. The result of using this
+invalid wl_buffer as an argument in any request by the client is
+defined by the compositor implementation.</p>
+
+<p>This takes the same arguments as a &#39;create&#39; request, and obeys the
+same restrictions.</p>
+
+<p>This event only exists since version 2 of the interface</p>
+</div></div>
+        <h2 id='implementors'>Implementors</h2>
+        <ul class='item-list' id='implementors-list'>
+    </ul><script type="text/javascript" async
+                         src="../../../../../implementors/wayland_protocols/unstable/linux_dmabuf/server/zwp_linux_buffer_params_v1/trait.Handler.js">
+                 </script></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../main.js"></script>
+    <script defer src="../../../../../search-index.js"></script>
+</body>
+</html>
